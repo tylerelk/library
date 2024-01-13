@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <h1 class="title">Personal Library</h1>
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M13 9H27V5H13V9ZM27 1V5H13H7V9C7 9 3 9 3 5C3 1 7 1 7 1H27Z" fill="#668077"></path>
+                <path d="M13 9V17L10 15L7 17V9V5H13V9Z" fill="#FFE6EA"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M29 10V30C29 30 29 31 28 31H4C4 31 3 31 3 30V5C3 9 7 9 7 9V17L10 15L13 17V9H27H28C28 9 29 9 29 10Z" fill="#FFC44D"></path>
+                <path d="M13 9H28C28 9 29 9 29 10V30C29 30 29 31 28 31H4C4 31 3 31 3 30V5M3 5C3 1 7 1 7 1H29M3 5C3 9 7 9 7 9M7 5V17L10 15L13 17V5H27" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </svg>
+        </div>
+        <div class="book-add-menu">
+            <button class="book-add-expand" data-open="open"></button>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title">
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author">
+            <label for="pages">Number of Pages:</label>
+            <input type="number" name="pages" id="pages" min="1">
+            <label for="have-read">Read?</label>
+            <select type="option" name="have-read" id="have-read">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+            </select>
+            <input type="submit" value="+" id="submit"></input>
+        </div>
+    </nav>
+<main>
+  <div class="library-area">
+  </div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
