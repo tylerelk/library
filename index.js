@@ -1,11 +1,13 @@
 const library = [];
 
-function Book(title, author, numPages, haveRead, bookID) {
-  this.title = `"${title}"`;
-  this.author = `by ${author}`;
-  this.numPages = `${numPages} pages`;
-  this.haveRead = haveRead;
-  this.bookID = bookID;
+class Book {
+  constructor(title, author, numPages, haveRead, bookID) {
+    this.title = `${title}`;
+    this.author = `by ${author}`;
+    this.numPages = `${numPages} pages`;
+    this.haveRead = haveRead;
+    this.bookID = bookID;
+  }
 }
 
 function displayBooks(arr) {
